@@ -1,17 +1,26 @@
 <template>
-  <div class="state">
-    <img src="../assets/稿定设计导出-20190420-163135.png" alt="">
+  <div class="home-view">
+    <h1 class="home-title">
+      短链接 | HOME
+    </h1>
+    <pre-nav></pre-nav>
   </div>
 </template>
 
 <script>
-import ser from '../lib/Service.js'
+import PreNav from '../components/PreNav'
 export default {
+  components: {
+    'pre-nav': PreNav
+  },
+  name: 'home',
   computed: {
 
   }
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="stylus">
+  .home-title
+    font-size 80px;
 </style>
