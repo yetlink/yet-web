@@ -5,10 +5,12 @@
 </template>
 
 <script>
+import { show } from './components/GlobalInformationContainer'
 export default {
   components: {},
   name: 'app'
 }
+show('123123123')
 </script>
 
 <style lang="stylus">
