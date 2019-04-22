@@ -1,29 +1,8 @@
-# yet-web
+# 新增全局信息显示的组件
+## 详情components目录里的Global开头的两个文件，均有注释（可能写的时候太晚了注释写得不是很清晰请谅解）
+用法：导入Container文件里的show函数，然后show("some information")
+```javascript
+import {show} from './src/components/GlobalInformationContainer'
 
-## Project setup
+show("hello world")
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

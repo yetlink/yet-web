@@ -6,10 +6,15 @@
     <span class="link-item">
       <router-link to="/ment">报表</router-link>
     </span>
+    <span class="link-item">
+      <a href="#" @click="testGlobalInformation">全局信息测试</a>
+    </span>
   </div>
 </template>
 
 <script>
+import { show } from '../components/GlobalInformationContainer'
+
 /**
  * 仅做测试使用
  * @author hello-acuario
@@ -19,6 +24,11 @@ export default {
   name: 'pre-nav',
   computed: {
 
+  },
+  methods: {
+    testGlobalInformation: () => {
+      show('hello world(两秒后消除)')
+    }
   }
 }
 </script>
