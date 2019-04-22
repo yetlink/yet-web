@@ -5,6 +5,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+const token = localStorage.getItem('token')
+console.log(token)
+
 new Vue({
   router,
   store,
