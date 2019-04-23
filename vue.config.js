@@ -1,15 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
-    devServer: {
-      proxy: {
-        '/api': {
-          target: 'http://localhost:6600',
-          changeOrigin: true
-        }
-      }
-    }
-  }
-=======
   devServer: {
     port: 6600,
     proxy: {
@@ -30,4 +19,3 @@ module.exports = {
     }
   }
 }
->>>>>>> 62cc387ab43662bee6664c0a0cac1032957ec3ed
