@@ -31,14 +31,14 @@ const GlobalInformation = {
     }, 2000) // 两秒钟后消失 TODO 可配置的消失时间
   }
 }
-export default GlobalInformation // For using <template></template>. Don't use this.
+export default GlobalInformation
 </script>
 
 <style scoped lang="stylus">
   // 全局提示的样式在这里写
   .global-information-view
     width 100vw
-    background-color bisque
+    background  linear-gradient(to right, #A168E0, #7575DD, #72B2E0);
     position fixed
     top 0px
     padding 3px
@@ -46,5 +46,5 @@ export default GlobalInformation // For using <template></template>. Don't use t
     transition all ease-in .2s
 
     .information-words
-      color: #5d5d5d
+      color: white
 </style>
