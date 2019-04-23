@@ -1,7 +1,7 @@
 <template>
-  <div class="home-view">
-    <h1 class="home-title">
-      短链接 | HOME
+  <div class="statement-view">
+    <h1 class="statement-title">
+      短链接 | STATEMENT
     </h1>
     <pre-nav></pre-nav>
   </div>
@@ -13,7 +13,7 @@ export default {
   components: {
     'pre-nav': PreNav
   },
-  name: 'home',
+  name: 'statement',
   computed: {
 
   }
@@ -21,6 +21,6 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .home-title
+  .statement-title
     font-size 80px;
 </style>
