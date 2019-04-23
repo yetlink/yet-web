@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// 全局消息插件
+import Message from './components/Message'
+Vue.use(Message)
+
 Vue.config.productionTip = false
 
 const token = localStorage.getItem('token')

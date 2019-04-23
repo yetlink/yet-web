@@ -13,8 +13,6 @@
 </template>
 
 <script>
-import { show } from '../components/GlobalInformationContainer'
-
 /**
  * 仅做测试使用
  * @author hello-acuario
@@ -26,8 +24,8 @@ export default {
 
   },
   methods: {
-    testGlobalInformation: () => {
-      show('hello world(两秒后消除)')
+    testGlobalInformation: function () {
+      this.$message('hello world')
     }
   }
 }
