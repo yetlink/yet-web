@@ -22,10 +22,15 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+<<<<<<< HEAD
+=======
+    "lint-staged": "^8.1.5",
+>>>>>>> 62cc387ab43662bee6664c0a0cac1032957ec3ed
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.21"
   },
+<<<<<<< HEAD
   "eslintConfig": {
     "root": true,
     "env": {
@@ -50,4 +55,15 @@
     "last 2 versions",
     "not ie <= 8"
   ]
+=======
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+>>>>>>> 62cc387ab43662bee6664c0a0cac1032957ec3ed
 }

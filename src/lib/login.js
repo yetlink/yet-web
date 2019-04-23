@@ -1,5 +1,5 @@
 import store from '../store';
-import Ajax from './ajax';
+import Ajax from './Ajax';
 
 function checkLogin() {
     let token = window.localStorage.getItem('token');
@@ -14,7 +14,7 @@ function checkLogin() {
         })
     }
 }
-//过去vuex中的token
+//获取vuex中的token
 function getStoreToken(){
     return store.state.token;
 }
