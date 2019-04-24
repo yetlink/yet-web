@@ -1,5 +1,5 @@
 <template>
-  <h1 class="not-found-error-words">
+  <h1 class="not-found-error-view">
     UnauthorizedError
   </h1>
 </template>
