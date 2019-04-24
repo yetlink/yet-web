@@ -27,7 +27,7 @@ const GlobalInformation = {
   computed: {},
   created: function () {
     setTimeout(() => {
-      this.$emit('onDelete', this.id)
+      this.$emit('delete', this.id)
     }, 2000) // 两秒钟后消失 TODO 可配置的消失时间
   }
 }
