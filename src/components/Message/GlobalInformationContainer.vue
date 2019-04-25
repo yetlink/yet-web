@@ -1,7 +1,7 @@
 <template>
   <div class="global-information-view-container">
     <transition name="fade">
-      <global-info v-for="infoItem in info" :info="infoItem.info" @onDelete="onDelete" :id="infoItem.id"
+      <global-info v-for="infoItem in info" :info="infoItem.info" @delete="onDelete" :id="infoItem.id"
                    :key="infoItem.id"></global-info>
     </transition>
   </div>
