@@ -10,7 +10,7 @@ export default {
   components: {},
   name: 'app',
   created () {
-    Service.login()
+    Service.checkLogin()
   }
 }
 </script>
