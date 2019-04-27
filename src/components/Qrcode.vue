@@ -6,7 +6,7 @@
 
 <script>
 import Qrcode from '@xkeshi/vue-qrcode'
-import Logo from '../assets/img/logo.png'
+import Logo from '../assets/img/logo2.png'
 
 export default {
   components: {
@@ -32,6 +32,7 @@ export default {
       const canvas = this.$refs.qrcodeImg.$el
       const ctx = canvas.getContext('2d')
 
+      console.log(canvas.width)
       const centerX = canvas.width / 2
       const centerY = canvas.height / 2
       const getCenterX = (width) => centerX - width / 2
@@ -41,7 +42,7 @@ export default {
       ctx.shadowColor = '#353535'
       ctx.shadowBlur = 6
       ctx.beginPath()
-      ctx.arc(100, 100, logoSize - 7, 0, Math.PI * 2, true)
+      ctx.arc(centerX, centerY, logoSize - 7, 0, Math.PI * 2, true)
       ctx.closePath()
       ctx.fill()
 
