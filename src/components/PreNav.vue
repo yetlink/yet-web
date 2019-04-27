@@ -9,6 +9,7 @@
     <span class="link-item">
       <a href="#" @click="testGlobalInformation">全局信息测试</a>
     </span>
+
   </div>
 </template>
 
