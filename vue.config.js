@@ -1,4 +1,12 @@
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+
+        'common': '@/src/common'
+      }
+    }
+  },
   devServer: {
     port: 6600,
     proxy: {
@@ -17,5 +25,6 @@ module.exports = {
         }
       }
     }
+
   }
 }

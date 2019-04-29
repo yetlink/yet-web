@@ -19,6 +19,7 @@ export default {
   *
     margin 0
     padding 0
-    color #72B2E085
+    color #777777
+    font-size 18px
 
 </style>
