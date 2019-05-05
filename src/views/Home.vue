@@ -1,10 +1,15 @@
 <template>
   <div class="home-view">
-    <h1 class="home-title">
+    <!-- <h1 class="home-title">
       短链接 | HOME
-    </h1>
+    </h1> -->
+    <el-button>缩短地址</el-button>
+    <el-button>地址加密</el-button>
+    <el-button>地址还原</el-button>
     <qr-code :url="url"></qr-code>
-    <input type="text" v-model="url" placeholder="输入以改变二维码">
+    <!-- <input type="text" v-model="url" placeholder="输入以改变二维码"> -->
+    <el-input type="text" v-model="url" placeholder="输入以改变二维码"></el-input>
+    <el-button>生成地址</el-button>
     <pre-nav></pre-nav>
   </div>
 </template>
@@ -25,6 +30,10 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-    .home-title
-      font-size 80px;
+  .home-view
+    padding-top 70px
+    width 100%
+
+  .home-title
+    font-size 80px;
 </style>

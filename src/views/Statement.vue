@@ -22,5 +22,6 @@ export default {
 
 <style scoped lang="stylus">
   .statement-title
+    padding-top 70px
     font-size 80px;
 </style>
