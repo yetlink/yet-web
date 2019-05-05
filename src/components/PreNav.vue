@@ -1,15 +1,15 @@
 <template>
   <div class="pre-nav-view">
-  <el-menu 
-    class="el-menu" mode="horizontal" 
+  <el-menu
+    class="el-menu" mode="horizontal"
     background-color="#FFF"
     text-color="#1E90FF"
     >
     <el-menu-item index="1">
-      <router-link to="/home">首页</router-link> 
+      <router-link to="/home">首页</router-link>
     </el-menu-item>
     <el-menu-item index="2">
-      <router-link to="/ment">报表</router-link> 
+      <router-link to="/ment">报表</router-link>
     </el-menu-item>
   </el-menu>
 
@@ -33,10 +33,10 @@
 export default {
   components: {},
   name: 'pre-nav',
-  data(){
-      return{
-          activeIndex:"1"
-      }
+  data () {
+    return {
+      activeIndex: '1'
+    }
   },
   computed: {
 
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .el-menu 
+  .el-menu
     position fixed
     top 0
     width 100%
@@ -63,7 +63,7 @@ export default {
 
   .el-menu-item
     padding 0
-  
+
   .el-menu-item a
     display block
     height 60px
@@ -74,10 +74,10 @@ export default {
     color #1e90ff!important;
     border-bottom 2px solid #409eff
 
-  .el-menu--horizontal > .el-menu-item.is-active 
+  .el-menu--horizontal > .el-menu-item.is-active
     border-bottom none
     color none
-  
+
   .pre-nav-view
     display flex
     justify-content center
