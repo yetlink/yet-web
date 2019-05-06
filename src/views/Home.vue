@@ -3,13 +3,12 @@
     <!-- <h1 class="home-title">
       短链接 | HOME
     </h1> -->
-    <el-button>缩短地址</el-button>
-    <el-button>地址加密</el-button>
-    <el-button>地址还原</el-button>
+    <button>缩短地址</button>
+    <button>地址加密</button>
+    <button>地址还原</button>
     <qr-code :url="url"></qr-code>
-    <!-- <input type="text" v-model="url" placeholder="输入以改变二维码"> -->
-    <el-input type="text" v-model="url" placeholder="输入以改变二维码"></el-input>
-    <el-button>生成地址</el-button>
+    <input type="text" v-model="url" placeholder="输入以改变二维码">
+    <button>生成地址</button>
     <pre-nav></pre-nav>
   </div>
 </template>
