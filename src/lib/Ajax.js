@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { proxy } from '../config'
 import { trim } from './util'
+import Service from '../service/Service'
 
 const GET = 'GET'
 const POST = 'POST'
@@ -51,7 +52,7 @@ export default class Ajax {
       baseURL: this.proxy,
       headers: {
         'content-type': 'application/json',
-        'token': '' // todo 可在这里执行token方法
+        'token': Service.getStoreToken()// todo 可在这里执行token方法
       }
     }
     if (typeof params === 'object') {
